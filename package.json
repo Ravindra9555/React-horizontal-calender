@@ -1,0 +1,32 @@
+{
+  "name": "react-calender-horizontal",
+  "version": "1.0.1",
+  "description": "This  is react horizontal calender ",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "React",
+    "horizontal",
+    "calender",
+    "slectdate"
+  ],
+  "author": "Ravindra Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^9.1.3"
+  }
+}
