@@ -13,6 +13,8 @@ A customizable horizontal scrollable calendar component built in React that allo
 
 <img src="./preview.png">
 
+![Preview Image](https://github.com/Ravindra9555/React-horizontal-calender/raw/master/preview.png)
+
 ## Installation
 
 Install the package via npm:
