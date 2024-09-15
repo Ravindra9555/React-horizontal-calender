@@ -2,6 +2,7 @@
   "name": "react-calender-horizontal",
   "version": "1.0.3",
   "description": "This  is react horizontal calender ",
+  "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib"
   },
