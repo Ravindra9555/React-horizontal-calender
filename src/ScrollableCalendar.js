@@ -19,7 +19,8 @@ const ScrollableCalendar = ({
   prevButtonColor = "#007bff",
   nextButtonColor = "#007bff",
   daysInWeek = 7, // Allow setting the number of days
-  canSelectPastDates = false, // Allow selecting past dates
+  canSelectPastDates = false,
+  maxWidth="800px" // Allow selecting past dates
 }) => {
   const today = dayjs();
   const [currentWeekStart, setCurrentWeekStart] = useState(today);
@@ -48,7 +49,9 @@ const ScrollableCalendar = ({
   const currentYear = currentWeekStart.format("YYYY");
 
   return (
-    <div className="calendar-container">
+    <div className="calendar-container" style={{
+      maxWidth :maxWidth
+    }}>
       <div className="calendar-header">
         <button
           onClick={goToPreviousWeek}
@@ -91,6 +94,7 @@ const ScrollableCalendar = ({
 ScrollableCalendar.propTypes = {
   onDateSelect: PropTypes.func,
   prevButtonColor: PropTypes.string,
+  maxWidth: PropTypes.string,
   nextButtonColor: PropTypes.string,
   daysInWeek: PropTypes.number, // New prop for setting number of days
   canSelectPastDates: PropTypes.bool, // New prop for allowing/disallowing past dates
