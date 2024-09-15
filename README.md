@@ -11,6 +11,8 @@ A customizable horizontal scrollable calendar component built in React that allo
 * **Min Date**: Users are restricted from selecting dates prior to the current date (if enabled).
 * **Previous/Next Week Navigation**: Scroll through weeks easily with the previous and next buttons.
 
+<img src="./preview.png">
+
 ## Installation
 
 Install the package via npm:
