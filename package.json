@@ -1,6 +1,6 @@
 {
   "name": "react-calender-horizontal",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This  is react horizontal calender ",
   "main": "lib/index.js",
   "scripts": {
