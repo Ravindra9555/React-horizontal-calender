@@ -7,7 +7,7 @@ A customizable horizontal scrollable calendar component built in React that allo
 - **Horizontal Scrollable Calendar**: A clean, scrollable week-based calendar.
 - **Customizable Colors**: Users can customize the color of the next/previous buttons.
 - **Date Selection**: Click on a date to select it.
-- **Min Date**: Users are restricted from selecting dates prior to the current date.
+- **Min Date**: Users are restricted from selecting dates prior to the current date (if enabled).
 - **Previous/Next Week Navigation**: Scroll through weeks easily with the previous and next buttons.
 
 ## Installation
@@ -15,129 +15,97 @@ A customizable horizontal scrollable calendar component built in React that allo
 Install the package via npm:
 
 ```bash
-npm install react-calender-horizontal
-# Usage
-Import the ScrollableCalendar component in your React project:
+npm install react-calender-horizontal@latest
 
-jsx
-Copy code
+Usage
+
+To use the calendar in your component, import and configure it like this:
+
 import React from 'react';
-import ScrollableCalendar from 'react-calender-horizontal';
+import ScrollableCalendar from 'react-calender-horizontal/lib/ScrollableCalendar';
 
-const App = () => {
-  const handleDateChange = (date) => {
-    console.log("Selected date: ", date);
-  };
-
+const Calendar = () => {
   return (
     <div>
-      <h1>My Calendar</h1>
-      <ScrollableCalendar 
-        onDateChange={handleDateChange} 
-        buttonColor="#007bff"  // Customize button color
+      <ScrollableCalendar
+        onDateSelect={(date) => console.log(date)}
+        prevButtonColor="#ff5733"       // Custom previous button color
+        nextButtonColor="#33c1ff"       // Custom next button color
+        daysInWeek={14}                 // Number of days to display in a week strip
+        canSelectPastDates={false}      // Disable selection of past dates
+        maxWidth="900px"                // Set max width of the calendar strip
       />
     </div>
   );
 };
 
-export default App;
-Props
-Prop Name	Type	Description	Default
-onDateChange	function	Callback function triggered when a date is selected. Returns the selected date.	null
-buttonColor	string	Customize the color of the previous and next buttons. Accepts a hex or string color value.	#000
-Example
-Here’s a more detailed example of how to use this component in your project:
+export default Calendar;
 
-jsx
-Copy code
-import React, { useState } from 'react';
-import ScrollableCalendar from 'react-calender-horizontal';
 
-const App = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
+Getting Selected Date
+You can define a custom function to handle the selected date like this:
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
+
+import React from 'react';
+import ScrollableCalendar from 'react-calender-horizontal/lib/ScrollableCalendar';
+
+const Calendar = () => {
+  const handleDateSelect = (date) => {
+    console.log(date); // Handle the selected date
   };
 
   return (
     <div>
-      <h1>Selected Date: {selectedDate ? selectedDate.toString() : "None"}</h1>
-      <ScrollableCalendar 
-        onDateChange={handleDateChange} 
-        buttonColor="#ff5722"  // Custom color
+      <ScrollableCalendar
+        onDateSelect={handleDateSelect}
+        prevButtonColor="#ff5733"
+        nextButtonColor="#33c1ff"
+        daysInWeek={14}
+        canSelectPastDates={false}
+        maxWidth="900px"
       />
     </div>
   );
 };
 
-export default App;
-Get Deleted Date
-To get the date that has been unselected or reset by the user, you can add logic to handle when a previously selected date is clicked again:
+export default Calendar;
 
-jsx
-Copy code
-import React, { useState } from 'react';
-import ScrollableCalendar from 'react-calender-horizontal';
 
-const App = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
+Customizable Props
+You can customize the following properties in the calendar component:
 
-  const handleDateChange = (date) => {
-    if (selectedDate && selectedDate.getTime() === date.getTime()) {
-      setSelectedDate(null); // Date deselection
-      console.log("Date deselected: ", date);
-    } else {
-      setSelectedDate(date);
-      console.log("Selected date: ", date);
-    }
-  };
+onDateSelect: Function to handle date selection.
+prevButtonColor: Set the color of the previous button (e.g., #ff5733).
+nextButtonColor: Set the color of the next button (e.g., #33c1ff).
+daysInWeek: Number of days to display in the strip (default is 7, can be customized to 14).
+canSelectPastDates: Boolean to allow/disallow selecting past dates (true or false).
+maxWidth: Define the maximum width of the calendar strip (e.g., 900px, 90%).
+Example:
 
-  return (
-    <div>
-      <h1>Selected Date: {selectedDate ? selectedDate.toString() : "None"}</h1>
-      <ScrollableCalendar 
-        onDateChange={handleDateChange} 
-        buttonColor="#4caf50"  // Custom button color
-      />
-    </div>
-  );
-};
+<ScrollableCalendar
+  onDateSelect={(date) => console.log(date)}
+  prevButtonColor="#ff5733"
+  nextButtonColor="#33c1ff"
+  daysInWeek={14}
+  canSelectPastDates={false}
+  maxWidth="900px"
+/>
+Contributing
+You can contribute to this project by forking the repository and submitting a pull request. Contributions are welcome!
 
-export default App;
-Development
-Build
-To build the component for production, run:
+GitHub Repository Link <a href="https://github.com/Ravindra9555/React-horizontal-calender" target="_blank"> Link </a>
 
-bash
-Copy code
-npm run build
-This will transpile your source code from the src folder into a distributable format inside the lib folder.
-
-Testing Locally
-If you'd like to test the component locally before publishing:
-
-Run the build command: npm run build
-Link your package locally:
-bash
-Copy code
-npm link
-In your React project, run:
-bash
-Copy code
-npm link react-calender-horizontal
 License
 This project is licensed under the ISC License.
 
 Author
-Created by Ravindra Kumar.
+Created by Ravindra Kumar. <a href="https://ravindra.vercel.app" target="_blank">Profile </a>
 
 
-This `README.md` now contains:
-- **Installation instructions** to guide users on how to install your package.
-- **Usage examples** including a basic and a more detailed implementation.
-- **Props documentation** for customizable aspects.
-- **A method for getting the deselected date** when a user clicks the selected date again.
-- **Build and development steps** for testing and building the package locally.
 
-Feel free to add more information, such as contributing guidelines or FAQs, if necessary!
+### Key Improvements:
+- Consistent headings and code block formatting.
+- Detailed instructions on usage with comments to explain props.
+- Added links and properly formatted sections for contributing, license, and author information.
+
+Feel free to update it further based on your needs!
