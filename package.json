@@ -14,8 +14,13 @@
     "React",
     "horizontal",
     "calender",
-    "slectdate"
+    "slectdate",
+    "React-horizontal-datepicker",  "horizontal-calendar", "react-horizontal-strip-datepicker", "react-horizontal-date-picker",  "calendar-strip",  "react-calendar", "horizontal-calendar"," react-calendar-timeline"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ravindra9555/React-horizontal-calender.git"
+  },
   "author": "Ravindra Kumar",
   "license": "ISC",
   "dependencies": {

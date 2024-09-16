@@ -114,7 +114,9 @@ License
 This project is licensed under the ISC License.
 
 Author
-Created by Ravindra Kumar.  <a href="https://ravindra.vercel.app" target="_balnk">Profile</a>
+Created by:
+ Ravindra Kumar. ![Preview Image](https://avatars.githubusercontent.com/u/69795113?v=4) 
+ <a href="https://ravindra.vercel.app" target="_balnk">Profile</a>
 
 
 I hope this is helpful!
