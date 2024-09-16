@@ -113,10 +113,13 @@ GitHub Repository Link: <a href="https://github.com/Ravindra9555/React-horizonta
 License
 This project is licensed under the ISC License.
 
-Author
-Created by:
- Ravindra Kumar. ![Preview Image](https://avatars.githubusercontent.com/u/69795113?v=4) 
- <a href="https://ravindra.vercel.app" target="_balnk">Profile</a>
+
+## Author
+Created by:  
+**Ravindra Kumar**  
+<img src="https://avatars.githubusercontent.com/u/69795113?v=4" alt="Ravindra's Profile" width="100" height="100">
+
+[Profile](https://ravindra.vercel.app)
 
 
 I hope this is helpful!
