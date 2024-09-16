@@ -1,6 +1,6 @@
 {
   "name": "react-calender-horizontal",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This  is react horizontal calender ",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,14 @@
     "horizontal",
     "calender",
     "slectdate",
-    "React-horizontal-datepicker",  "horizontal-calendar", "react-horizontal-strip-datepicker", "react-horizontal-date-picker",  "calendar-strip",  "react-calendar", "horizontal-calendar"," react-calendar-timeline"
+    "React-horizontal-datepicker",
+    "horizontal-calendar",
+    "react-horizontal-strip-datepicker",
+    "react-horizontal-date-picker",
+    "calendar-strip",
+    "react-calendar",
+    "horizontal-calendar",
+    " react-calendar-timeline"
   ],
   "repository": {
     "type": "git",
