@@ -1,6 +1,6 @@
 {
   "name": "react-calender-horizontal",
-  "version": "1.0.8",
+ "version": "1.0.9",
   "description": "This  is react horizontal calender ",
   "main": "lib/index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ravindra9555/React-horizontal-calender.git"
+    "url": "git+https://github.com/Ravindra9555/React-horizontal-calender.git"
   },
   "author": "Ravindra Kumar",
   "license": "ISC",
