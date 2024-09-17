@@ -119,9 +119,9 @@ This project is licensed under the ISC License.
 ## Author
 Created by:  
 **Ravindra Kumar**  
-<img src="https://avatars.githubusercontent.com/u/69795113?v=4" alt="Ravindra's Profile" width="100" height="100">
-
+<img src="https://avatars.githubusercontent.com/u/69795113?v=4" alt="Ravindra's Profile" width="100" height="100" style="border-radius:50%">
 [Profile](https://ravindra.vercel.app)
+<a href="https://buymeacoffee.com/ravindrakau" target="_blank"><img src="https://play-lh.googleusercontent.com/aMb_Qiolzkq8OxtQZ3Af2j8Zsp-ZZcNetR9O4xSjxH94gMA5c5gpRVbpg-3f_0L7vlo=w240-h480-rw" height="50" width="50" alt="buy me a coffee"  ></img></a>
 
 
 I hope this is helpful!
