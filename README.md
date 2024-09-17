@@ -21,10 +21,12 @@ Install the package via npm:
 
 ```bash
 npm install react-calender-horizontal@latest
-Use code with caution.
+```
 
 Usage
 To use the calendar in your component, import and configure it like this:
+
+```bash
 
 JavaScript
 import React from 'react';
