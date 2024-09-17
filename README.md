@@ -1,15 +1,16 @@
 Markdown
+
 # React Horizontal Calendar
 
 A customizable horizontal scrollable calendar component built in React that allows users to select dates, scroll through weeks, and choose custom button colors. The component uses `dayjs` for date management and includes previous/next week navigation.
 
 ## Features
 
-* **Horizontal Scrollable Calendar**: A clean, scrollable week-based calendar.
-* **Customizable Colors**: Users can customize the color of the next/previous buttons.
-* **Date Selection**: Click on a date to select it.
-* **Min Date**: Users are restricted from selecting dates prior to the current date (if enabled).
-* **Previous/Next Week Navigation**: Scroll through weeks easily with the previous and next buttons.
+- **Horizontal Scrollable Calendar**: A clean, scrollable week-based calendar.
+- **Customizable Colors**: Users can customize the color of the next/previous buttons.
+- **Date Selection**: Click on a date to select it.
+- **Min Date**: Users are restricted from selecting dates prior to the current date (if enabled).
+- **Previous/Next Week Navigation**: Scroll through weeks easily with the previous and next buttons.
 
 <img src="./preview.png">
 
@@ -51,11 +52,12 @@ export default Calendar;
 
 ```
 
-
 ## Getting Selected Date
+
 You can define a custom function to handle the selected date like this:
 
 JavaScript
+
 ```bash
 import React from 'react';
 import ScrollableCalendar from 'react-calender-horizontal/lib/ScrollableCalendar';
@@ -82,8 +84,8 @@ const Calendar = () => {
 export default Calendar;
 ```
 
-
 ## Customizable Props
+
 You can customize the following properties in the calendar component:
 
 onDateSelect: Function to handle date selection.
@@ -95,6 +97,7 @@ maxWidth: Define the maximum width of the calendar strip (e.g., "900px", "90%").
 Example
 
 JavaScript
+
 ```bash
 <ScrollableCalendar
   onDateSelect={(date) => console.log(date)}
@@ -106,7 +109,6 @@ JavaScript
 />
 ```
 
-
 Contributing
 You can contribute to this project by forking the repository and submitting a pull request. Contributions are welcome!
 
@@ -115,13 +117,14 @@ GitHub Repository Link: <a href="https://github.com/Ravindra9555/React-horizonta
 License
 This project is licensed under the ISC License.
 
-
 ## Author
+
 Created by:  
 **Ravindra Kumar**  
 <img src="https://avatars.githubusercontent.com/u/69795113?v=4" alt="Ravindra's Profile" width="100" height="100" style="border-radius:50%">
 [Profile](https://ravindra.vercel.app)
-<a href="https://buymeacoffee.com/ravindrakau" target="_blank"><img src="https://play-lh.googleusercontent.com/aMb_Qiolzkq8OxtQZ3Af2j8Zsp-ZZcNetR9O4xSjxH94gMA5c5gpRVbpg-3f_0L7vlo=w240-h480-rw" height="50" width="50" alt="buy me a coffee"  ></img></a>
 
+#### Buy Me a Coffee
+<a href="https://buymeacoffee.com/ravindrakau" target="_blank"><img src="https://play-lh.googleusercontent.com/aMb_Qiolzkq8OxtQZ3Af2j8Zsp-ZZcNetR9O4xSjxH94gMA5c5gpRVbpg-3f_0L7vlo=w240-h480-rw" height="50" width="50" alt="buy me a coffee"></img></a>
 
 I hope this is helpful!
